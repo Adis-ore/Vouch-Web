@@ -1,0 +1,56 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+:root {
+  --bg: #0A0F1E;
+  --surface: #131929;
+  --surface-alt: #1C2438;
+  --border: #1F2A3F;
+  --accent: #E8A838;
+  --accent-dim: rgba(232, 168, 56, 0.12);
+  --success: #3ECFAA;
+  --danger: #E85D4A;
+  --text-primary: #F5F0E8;
+  --text-secondary: #8A8680;
+  --text-muted: #4A4A52;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text-primary);
+  font-family: 'DM Sans', sans-serif;
+}
+
+.display {
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+}
+
+.display-italic {
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 48px;
+  }
+}
