@@ -16,6 +16,36 @@
   --text-muted: #4A4A52;
 }
 
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    --bg: #F7F4EE;
+    --surface: #FFFFFF;
+    --surface-alt: #EDE9E1;
+    --border: #DDD8CE;
+    --accent: #C9821A;
+    --accent-dim: rgba(201, 130, 26, 0.12);
+    --success: #1FAE8D;
+    --danger: #C9412E;
+    --text-primary: #0A0F1E;
+    --text-secondary: #4A4654;
+    --text-muted: #9A9699;
+  }
+}
+
+:root[data-theme="light"] {
+  --bg: #F7F4EE;
+  --surface: #FFFFFF;
+  --surface-alt: #EDE9E1;
+  --border: #DDD8CE;
+  --accent: #C9821A;
+  --accent-dim: rgba(201, 130, 26, 0.12);
+  --success: #1FAE8D;
+  --danger: #C9412E;
+  --text-primary: #0A0F1E;
+  --text-secondary: #4A4654;
+  --text-muted: #9A9699;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
