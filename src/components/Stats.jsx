@@ -2,10 +2,10 @@ import FadeInSection from './shared/FadeInSection'
 import AnimatedCounter from './shared/AnimatedCounter'
 
 const stats = [
-  { target: 12000, suffix: '+', label: 'journeys started' },
-  { target: 78, suffix: '%', label: 'completion rate with a partner' },
-  { target: 4200000, prefix: '₦', label: 'stakes returned' },
-  { target: 4.8, suffix: '', label: 'average rating' },
+  { target: 340, suffix: '+', label: 'journeys started' },
+  { target: 61, suffix: '%', label: 'completion rate with a partner' },
+  { target: 180000, prefix: '₦', label: 'stakes returned' },
+  { target: 4.6, suffix: '', label: 'average rating' },
 ]
 
 export default function Stats() {
