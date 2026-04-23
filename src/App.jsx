@@ -9,10 +9,12 @@ import FAQ from './components/FAQ'
 import Download from './components/Download'
 import Footer from './components/Footer'
 import ResetPassword from './components/ResetPassword'
+import PaymentComplete from './components/PaymentComplete'
 
 const path = window.location.pathname
 
 export default function App() {
+  if (path === '/payment-complete') return <PaymentComplete />
   if (path === '/reset-password') return <ResetPassword />
 
   // Also handle Supabase recovery redirect which lands on / with a hash
