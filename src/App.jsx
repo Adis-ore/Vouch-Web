@@ -8,8 +8,17 @@ import Testimonials from './components/Testimonials'
 import FAQ from './components/FAQ'
 import Download from './components/Download'
 import Footer from './components/Footer'
+import ResetPassword from './components/ResetPassword'
+
+const path = window.location.pathname
 
 export default function App() {
+  if (path === '/reset-password') return <ResetPassword />
+
+  // Also handle Supabase recovery redirect which lands on / with a hash
+  const hash = new URLSearchParams(window.location.hash.substring(1))
+  if (hash.get('type') === 'recovery') return <ResetPassword />
+
   return (
     <>
       <Navbar />
