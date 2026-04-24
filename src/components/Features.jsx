@@ -1,4 +1,4 @@
-import { Target, Flame, Camera, Users, Shield, RefreshCw } from 'lucide-react'
+import { Target, Flame, Camera, Users, Gem, RefreshCw } from 'lucide-react'
 import FadeInSection from './shared/FadeInSection'
 
 const features = [
@@ -31,11 +31,11 @@ const features = [
     description: 'From 2 to 20 people in one journey. The more who show up, the more you feel accountable.',
   },
   {
-    Icon: Shield,
-    iconBg: 'rgba(232,93,74,0.15)',
-    iconColor: '#E85D4A',
-    title: 'Security deposit',
-    description: 'Both users stake an amount. Complete together, get it back. Nobody wins the other\'s money — you just want yours back.',
+    Icon: Gem,
+    iconBg: 'rgba(168,85,247,0.15)',
+    iconColor: '#a855f7',
+    title: 'Pro journeys',
+    description: 'Create private groups for you and your people. Invite only — what happens in the group stays in the group.',
   },
   {
     Icon: RefreshCw,

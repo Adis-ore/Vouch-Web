@@ -10,12 +10,18 @@ import Download from './components/Download'
 import Footer from './components/Footer'
 import ResetPassword from './components/ResetPassword'
 import PaymentComplete from './components/PaymentComplete'
+import PrivacyWeb from './components/PrivacyWeb'
+import TermsWeb from './components/TermsWeb'
+import CancellationWeb from './components/CancellationWeb'
 
 const path = window.location.pathname
 
 export default function App() {
   if (path === '/payment-complete') return <PaymentComplete />
   if (path === '/reset-password') return <ResetPassword />
+  if (path === '/privacy') return <PrivacyWeb />
+  if (path === '/terms') return <TermsWeb />
+  if (path === '/cancellation') return <CancellationWeb />
 
   // Also handle Supabase recovery redirect which lands on / with a hash
   const hash = new URLSearchParams(window.location.hash.substring(1))

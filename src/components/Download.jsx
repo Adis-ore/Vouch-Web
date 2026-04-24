@@ -59,7 +59,7 @@ export default function Download() {
               fontFamily: 'DM Sans, sans-serif', fontSize: 16,
               color: 'var(--text-secondary)', marginBottom: 40, lineHeight: 1.6,
             }}>
-              Free to download. Free to pair. Security deposit is always your choice.
+              Free to download. Free to pair. Upgrade when you're ready to go deeper.
             </p>
 
             {/* Store buttons */}

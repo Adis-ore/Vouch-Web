@@ -56,10 +56,15 @@ export default function Footer() {
 
           {/* Nav links */}
           <div style={{ display: 'flex', gap: 32, flexWrap: 'wrap' }}>
-            {['About', 'Privacy', 'Terms', 'Contact'].map(link => (
+            {[
+              { label: 'Privacy', href: '/privacy' },
+              { label: 'Terms', href: '/terms' },
+              { label: 'Cancellation', href: '/cancellation' },
+              { label: 'Contact', href: 'mailto:support@vouch.app' },
+            ].map(({ label, href }) => (
               <a
-                key={link}
-                href="#"
+                key={label}
+                href={href}
                 style={{
                   fontFamily: 'DM Sans, sans-serif', fontSize: 14,
                   color: 'var(--text-secondary)', textDecoration: 'none',
@@ -68,7 +73,7 @@ export default function Footer() {
                 onMouseEnter={e => e.target.style.color = 'var(--text-primary)'}
                 onMouseLeave={e => e.target.style.color = 'var(--text-secondary)'}
               >
-                {link}
+                {label}
               </a>
             ))}
           </div>
