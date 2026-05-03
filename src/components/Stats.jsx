@@ -2,10 +2,9 @@ import FadeInSection from './shared/FadeInSection'
 import AnimatedCounter from './shared/AnimatedCounter'
 
 const stats = [
-  { target: 340, suffix: '+', label: 'journeys started' },
+  { target: 47, suffix: '+', label: 'journeys started in early access' },
   { target: 61, suffix: '%', label: 'completion rate with a partner' },
-  { target: 180000, prefix: '₦', label: 'stakes returned' },
-  { target: 4.6, suffix: '', label: 'average rating' },
+  { target: 4.8, suffix: '', label: 'rating from early users' },
 ]
 
 export default function Stats() {
@@ -14,7 +13,7 @@ export default function Stats() {
       <div className="container">
         <div style={{
           display: 'grid',
-          gridTemplateColumns: 'repeat(4, 1fr)',
+          gridTemplateColumns: 'repeat(3, 1fr)',
           gap: 0,
           maxWidth: 1100,
           margin: '0 auto',

@@ -2,28 +2,28 @@ import LegalPage from './LegalPage'
 
 const sections = [
   {
-    title: '1. Cancelling Your Subscription',
-    body: 'You can cancel your Vouch Pro subscription at any time through the App Store (iOS) or Google Play (Android) account settings. Cancellation takes effect at the end of your current billing period. You will retain access to Pro features until that date.\n\nWe do not offer pro-rata refunds for unused subscription time after the billing period has started.',
+    title: '1. Subscription cancellation',
+    body: 'You may cancel your Vouch Pro or Elite subscription at any time from Settings → Your Plan → Cancel Subscription.\n\nWhen you cancel:\n• Your subscription remains active until the end of your current billing period\n• You will not be charged again after cancellation\n• You retain access to all Pro/Elite features until the billing period ends\n• After the period ends, your account automatically reverts to the Free plan\n• Your journeys, history, badges, and streak data are preserved\n\nWe do not offer prorated refunds for unused days within a billing period.',
   },
   {
-    title: '2. Journey Pass',
-    body: 'Journey Passes are one-time payments that unlock a single journey. Journey Passes are non-refundable once the journey has started.\n\nIf a Journey Pass was purchased but the journey has not yet started, contact us within 48 hours of purchase at support@vouch.app for a review.',
+    title: '2. Journey Pass — non-refundable',
+    body: 'Journey Pass purchases (₦800 one-time) are non-refundable once purchased. The pass activates immediately and is tied to a specific journey for its full duration.',
   },
   {
-    title: '3. Refund Eligibility',
-    body: 'You may be eligible for a refund if:\n— You were charged twice for the same subscription period (billing error)\n— You were charged after cancelling your subscription\n— You did not receive access to a paid feature due to a platform bug\n\nRefund requests must be submitted within 14 days of the charge to support@vouch.app.',
+    title: '3. Refund eligibility',
+    body: 'We offer refunds in the following circumstances only:\n• You were charged twice for the same subscription period (billing error)\n• You were charged after cancelling your subscription (system error)\n• Your account was not activated due to a payment processing error\n\nTo request a refund, email vouchapp0@gmail.com within 7 days of the charge with your account email and transaction reference.\n\nWe do not offer refunds for:\n• Change of mind after subscribing\n• Unused days within a billing period\n• Accounts suspended for Terms of Service violations\n• Journey Pass purchases',
   },
   {
-    title: '4. How to Cancel',
-    body: 'iOS: Open the App Store → Tap your profile → Subscriptions → Vouch → Cancel Subscription.\n\nAndroid: Open Google Play → Tap your profile → Payments & subscriptions → Subscriptions → Vouch → Cancel.\n\nEmailing us does not cancel your subscription — you must cancel through your app store.',
+    title: '4. How to cancel',
+    body: 'In-app: Settings → Your Plan → Cancel Subscription\n\nIf you are unable to cancel through the app, email vouchapp0@gmail.com with the subject line "Cancel Subscription" and your account email. We will process your cancellation within 24 hours.',
   },
   {
-    title: '5. Deleting Your Account',
-    body: 'You can delete your account from Settings → Account → Delete Account in the app. Deleting your account immediately cancels any active subscription and removes your data within 30 days.\n\nAccount deletion is permanent and cannot be undone.',
+    title: '5. Account deletion',
+    body: 'Deleting your account (Settings → Delete Account) automatically cancels any active subscription. No further charges will be made. Account deletion is permanent and cannot be undone.',
   },
   {
-    title: '6. Questions',
-    body: 'For refund requests or cancellation help, email support@vouch.app. We respond within 3 business days.',
+    title: '6. Contact',
+    body: 'For billing or cancellation queries:\nEmail: vouchapp0@gmail.com\nResponse time: within 24 hours on business days',
   },
 ]
 
@@ -32,7 +32,7 @@ export default function CancellationWeb() {
     <LegalPage
       title="Cancellation Policy"
       updated="April 2025"
-      intro={null}
+      intro="Our cancellation and refund policy for subscriptions and one-time purchases."
       sections={sections}
     />
   )

@@ -42,7 +42,7 @@ export default function LegalPage({ title, updated, intro, sections }) {
         ))}
 
         <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 13, color: 'var(--text-muted)', marginTop: 32, textAlign: 'center' }}>
-          Questions? Email <a href="mailto:support@vouch.app" style={{ color: 'var(--accent)', textDecoration: 'none' }}>support@vouch.app</a>
+          Questions? Email <a href="mailto:vouchapp0@gmail.com" style={{ color: 'var(--accent)', textDecoration: 'none' }}>vouchapp0@gmail.com</a>
         </p>
       </div>
     </div>

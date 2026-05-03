@@ -1,62 +1,20 @@
 import LegalPage from './LegalPage'
 
 const sections = [
-  {
-    title: '1. Acceptance',
-    body: 'By creating a Vouch account, you agree to these Terms of Service. If you do not agree, do not use the app. These terms apply to all users, including free and paid accounts.',
-  },
-  {
-    title: '2. Eligibility',
-    body: 'You must be at least 13 years old to use Vouch. By using the app, you confirm that the information you provide is accurate and that you have the legal capacity to enter into these terms.',
-  },
-  {
-    title: '3. Your Account',
-    body: 'You are responsible for maintaining the confidentiality of your account credentials. You are responsible for all activity that occurs under your account. Notify us immediately at support@vouch.app if you suspect unauthorized access.',
-  },
-  {
-    title: '4. Acceptable Use',
-    body: 'You agree not to:\n— Submit false, misleading, or fabricated check-ins\n— Harass, threaten, or abuse other users\n— Upload content that is illegal, obscene, or violates third-party rights\n— Attempt to circumvent any platform feature or access control\n— Use the app for any commercial purpose without written permission\nViolations may result in immediate account suspension.',
-  },
-  {
-    title: '5. Check-ins and Content',
-    body: 'You own the content you submit (text, photos, voice notes). By uploading content, you grant Vouch a non-exclusive, royalty-free license to store and display it to your journey partners. We do not use your check-in content for advertising or share it with third parties.',
-  },
-  {
-    title: '6. Subscriptions',
-    body: 'Vouch Pro is available as a monthly or annual subscription:\n— Monthly: ₦2,500/month\n— Annual: ₦20,000/year (save ~33%)\nSubscriptions auto-renew unless cancelled at least 24 hours before the renewal date. You can manage your subscription in your device\'s App Store or Google Play account settings.',
-  },
-  {
-    title: '7. Journey Pass',
-    body: 'A Journey Pass is a one-time payment that unlocks a single journey. Journey Passes are non-refundable once the journey has started. See our Cancellation Policy for full details.',
-  },
-  {
-    title: '8. Cancellation and Refunds',
-    body: 'You may cancel your subscription at any time. Cancellation takes effect at the end of the current billing period — you retain access until then. We do not offer pro-rata refunds for unused subscription time. See our Cancellation Policy for full details.',
-  },
-  {
-    title: '9. Accountability and Disputes',
-    body: 'Vouch provides tools for accountability but does not guarantee outcomes. If a partner disputes a check-in, our moderation team reviews and makes a final decision. Decisions are made in good faith but may not always align with your preference.',
-  },
-  {
-    title: '10. Account Suspension',
-    body: 'We may suspend or terminate accounts that violate these terms, submit fraudulent check-ins, or engage in abusive behavior. Severe violations result in permanent bans. We will notify you by email unless the violation makes notification inappropriate.',
-  },
-  {
-    title: '11. Disclaimer of Warranties',
-    body: 'Vouch is provided "as is" without warranties of any kind, express or implied. We do not guarantee that the app will be available at all times, error-free, or that it will meet your specific goals. Use the app at your own risk.',
-  },
-  {
-    title: '12. Limitation of Liability',
-    body: 'To the maximum extent permitted by Nigerian law, Vouch is not liable for any indirect, incidental, or consequential damages arising from your use of the app. Our total liability to you shall not exceed the amount you paid us in the 3 months preceding the claim.',
-  },
-  {
-    title: '13. Changes to Terms',
-    body: 'We may update these terms from time to time. We will notify users of material changes via in-app notification or email at least 7 days before they take effect. Continued use after the effective date means you accept the new terms.',
-  },
-  {
-    title: '14. Contact',
-    body: 'Questions about these terms? Email support@vouch.app.',
-  },
+  { title: '1. Acceptance of terms', body: 'By creating a Vouch account, you agree to these Terms of Service. If you do not agree, do not use the app.' },
+  { title: '2. Eligibility', body: 'You must be at least 13 years old to use Vouch. By creating an account, you confirm that you meet this age requirement. Users under 18 are responsible for ensuring they have parental awareness.' },
+  { title: '3. Your account', body: 'You are responsible for keeping your login credentials secure and for all activity that occurs under your account. You may not create multiple accounts or share your account with others. Notify us immediately at vouchapp0@gmail.com if you suspect unauthorised access.' },
+  { title: '4. Acceptable use', body: 'You agree not to: submit fake check-ins or misrepresent your progress; harass, threaten, or abuse other users; use Vouch for any illegal purpose; attempt to access other users\' private data; reverse engineer, copy, or resell any part of the platform; post content that is offensive, discriminatory, or harmful.' },
+  { title: '5. Subscriptions', body: 'Vouch offers Pro (₦1,500/month or ₦12,000/year), Elite (₦3,000/month or ₦24,000/year), and Journey Pass (₦800 one-time). Subscriptions are billed in advance. By subscribing, you authorise Paystack to charge your payment method on a recurring basis until you cancel. All payments are processed securely by Paystack. Vouch does not store your card or bank account details.' },
+  { title: '6. Cancellation and refunds', body: 'See our Cancellation Policy for full details on cancellations, refunds, and what happens when your subscription ends.' },
+  { title: '7. Content you submit', body: 'You retain ownership of content you submit (check-in notes, photos, voice notes). By submitting content, you grant Vouch a limited licence to display that content to members of your journey group. You are responsible for ensuring your content does not violate any third-party rights or applicable laws.' },
+  { title: '8. Suspension and termination', body: 'Vouch may suspend or permanently ban any account that repeatedly submits fake check-ins, harasses other users, violates these Terms, or engages in fraudulent activity. If your account is suspended for policy violations, subscription fees already paid are non-refundable.' },
+  { title: '9. Reputation and scores', body: 'Reputation scores are calculated automatically based on your activity. We reserve the right to adjust or reset scores if we detect fraudulent check-ins or abuse of the verification system.' },
+  { title: '10. Disclaimer', body: 'Vouch is provided "as is." We do not guarantee that the service will be uninterrupted or error-free. Accountability outcomes depend entirely on the effort and commitment of the users involved.' },
+  { title: '11. Limitation of liability', body: 'To the maximum extent permitted by law, Vouch shall not be liable for any indirect, incidental, or consequential damages arising from your use of the platform, including loss of data, failed goals, or disputes between users.' },
+  { title: '12. Governing law', body: 'These Terms are governed by the laws of the Federal Republic of Nigeria. Any disputes shall be resolved under Nigerian jurisdiction.' },
+  { title: '13. Changes to terms', body: 'We may update these Terms from time to time. Continued use of Vouch after changes are posted constitutes acceptance. We will notify users of significant changes through the app.' },
+  { title: '14. Contact', body: 'For questions about these Terms or general support:\nEmail: vouchapp0@gmail.com' },
 ]
 
 export default function TermsWeb() {

@@ -60,7 +60,7 @@ export default function Footer() {
               { label: 'Privacy', href: '/privacy' },
               { label: 'Terms', href: '/terms' },
               { label: 'Cancellation', href: '/cancellation' },
-              { label: 'Contact', href: 'mailto:support@vouch.app' },
+              { label: 'Contact', href: 'mailto:vouchapp0@gmail.com' },
             ].map(({ label, href }) => (
               <a
                 key={label}
